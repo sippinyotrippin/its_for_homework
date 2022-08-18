@@ -1,0 +1,5 @@
+name = input()
+age = int(input())
+city = input()
+greeting_1 = 'Hello %s from %s aged %d' % (name, city, age)
+print(greeting_1)
