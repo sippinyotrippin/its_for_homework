@@ -9,3 +9,9 @@ age = int(input('Enter your age: '))
 city = input('Enter the city you are from: ')
 greeting_2 = 'Hello {} from {} aged {}'.format(name, city, age)
 print(greeting_2)
+
+name = input('Enter your name: ')
+age = int(input('Enter your age: '))
+city = input('Enter the city you are from: ')
+greeting_3 = f'Hello {name} from {city} aged {age}'
+print(greeting_3)
