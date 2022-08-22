@@ -7,7 +7,7 @@ sentence = sentence.split()
 sentence = '-'.join(sentence)
 print(sentence)
 
-#Второй способ
+# Второй способ
 
 sentence = input('Enter the sentence at second time: ')
 sentence = sentence.replace(' ', '-')
