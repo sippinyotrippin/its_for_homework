@@ -8,15 +8,15 @@ paginator = [1, 2, 3, 4]
 counter = 0
 while True:
     action = input()
-    if action == '>':
+    if action == '>' and counter == len(paginator) - 1:
+        counter = 0
+        print(paginator[counter])
+    elif action == '<' and counter == 0:
+        counter = len(paginator) - 1
+        print(paginator[counter])
+    elif action == '>':
         counter += 1
         print(paginator[counter])
     elif action == '<':
         counter -= 1
-        print(paginator[counter])
-    elif counter == len(paginator) - 1 and action == '>':
-        counter = 0
-        print(paginator[counter])
-    elif counter == 0 and action == '<':
-        counter = len(paginator) - 1
         print(paginator[counter])
