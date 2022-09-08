@@ -14,7 +14,9 @@ while True:
     elif action == '<':
         counter -= 1
         print(paginator[counter])
-    elif paginator[-1] and action == '>':
-        print(paginator[0])
-    elif paginator[0] and action == '<':
-        print(paginator[-1])
+    elif counter == len(paginator) - 1 and action == '>':
+        counter = 0
+        print(paginator[counter])
+    elif counter == 0 and action == '<':
+        counter = len(paginator) - 1
+        print(paginator[counter])
