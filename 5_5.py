@@ -5,9 +5,16 @@
 # то следующий это первый, а если находится на первом элементе, то предыдущий это последний,
 # чтобы пользователь мог прокручивать список по кругу в любом направлении
 paginator = [1, 2, 3, 4]
-action: str = input('> <: ')
-index = 0
-step = len(action)
-if step:
-    print(paginator[index + step])
-elif step
+counter = 0
+while True:
+    action = input()
+    if action == '>':
+        counter += 1
+        print(paginator[counter])
+    elif action == '<':
+        counter -= 1
+        print(paginator[counter])
+    elif paginator[-1] and action == '>':
+        print(paginator[0])
+    elif paginator[0] and action == '<':
+        print(paginator[-1])
