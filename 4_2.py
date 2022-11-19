@@ -6,7 +6,7 @@
 text = input('enter: ').lower()
 count_dict = {}
 for i in text:
-    if i in count_dict:
+    if count_dict.get(i):
         count_dict[i] += 1
     else:
         count_dict[i] = 1
