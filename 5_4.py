@@ -3,6 +3,9 @@
 n = int(input('enter: '))
 triangle = []
 for i in range(n):
-    row = [1 for j in range(i + 1)]
-    print(row)
+    row = [str(1) for j in range(i + 1)]
     triangle.append(row)
+    print(' ' * (n-i), ' '.join(row))
+
+print()
+print(triangle)
