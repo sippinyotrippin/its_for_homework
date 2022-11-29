@@ -7,7 +7,8 @@
 data = {
     'Russia': ['Moscow', 'Saint Petersburg', 'Omsk'],
     'Belarus': ['Minsk', 'Brest', 'Gomel'],
-    'Ukraine': ['Kiev', 'Kharkiv', 'Lviv']
+    'Ukraine': ['Kiev', 'Kharkiv', 'Lviv'],
+    'Poland': ['Warsaw', 'Gdansk', 'Krakow']
 }
 
 
@@ -15,8 +16,6 @@ def city_country(city):
     for key, val in data.items():
         if city in val:
             return key
-        else:
-            return 'no find country to required city'
 
 
 my_city = input('city: ')
