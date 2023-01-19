@@ -1,0 +1,7 @@
+CREATE TABLE IN FOT EXISTS invoices(
+id SMALLSERIAL PRIMARY KEY, user_id SMALLINT NOT NULL,
+ FOREIGN KEY (user_id) REFERENCES users(id),
+ date_create TIMESTAMP,
+ total FLOAT, status_id SMALLINT NOT NULL,
+ FOREIGN KEY (status_id) REFERENCES statuses(id) ON DELETE CASCADE
+ );
